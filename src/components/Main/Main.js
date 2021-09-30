@@ -47,7 +47,6 @@ const Main = () => {
       setNumber(4);
       setBtnId(e.target.id);
     }
-    console.log("left");
   };
 
   const handleReset = () => {

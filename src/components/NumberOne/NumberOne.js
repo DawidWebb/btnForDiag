@@ -10,7 +10,7 @@ const NumberOne = () => {
 
   return (
     <>
-      <div>{compenentViev}</div>
+      <div className={styles.wrapper}>{compenentViev}</div>
     </>
   );
 };

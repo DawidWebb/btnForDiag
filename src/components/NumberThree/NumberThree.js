@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { StoreContext } from "../../Store/StoreProvider";
+import styles from "../NumberOne/numbers.module.scss";
 
 const NumberThree = () => {
   const { number } = useContext(StoreContext);
@@ -8,7 +9,7 @@ const NumberThree = () => {
 
   return (
     <>
-      <div>{compenentViev}</div>
+      <div className={styles.wrapper}>{compenentViev}</div>
     </>
   );
 };

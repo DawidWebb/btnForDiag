@@ -1,8 +1,8 @@
 @import "../../Styles/common.scss";
 
-div {
+.wrapper {
     p {
-        font-size: $l-fz;
+        font-size: $xl-fz;
         color: $text-second;
         font-weight: 700;
     }

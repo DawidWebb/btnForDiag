@@ -1,9 +1,8 @@
-import React, { createContext, useEffect, useState } from "react";
+import React, { createContext, useState } from "react";
 
 export const StoreContext = createContext(null);
 
 const StoreProvider = ({ children }) => {
-  // login Modal viev
   const [number, setNumber] = useState(false);
 
   return (
