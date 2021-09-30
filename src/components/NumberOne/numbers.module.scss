@@ -1,0 +1,9 @@
+@import "../../Styles/common.scss";
+
+div {
+    p {
+        font-size: $l-fz;
+        color: $text-second;
+        font-weight: 700;
+    }
+}

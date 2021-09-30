@@ -1,0 +1,78 @@
+@import "../../Styles/common.scss";
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background-color: $background;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .inside {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        min-height: 50vh;
+        padding: 30px 10px;
+        border: 1px solid $text-first;
+        border-radius: $radius;
+
+
+        .buttons {
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+
+            div {
+                flex-basis: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 30px;
+
+
+                button {
+                    @include button;
+                }
+            }
+
+            div:nth-child(2) {
+                justify-content: center;
+
+            }
+        }
+
+        .content {
+            width: 70%;
+            min-height: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+
+
+        }
+    }
+
+    @media screen and (orientation:landscape) {
+        .inside {
+            .buttons {
+                width: 60%
+            }
+
+            .content {
+                width: 50%;
+            }
+        }
+    }
+
+    @media screen and (min-width:map-get($breakpoints, medium)) {
+        .inside {
+            width: 60%
+        }
+    }
+}
